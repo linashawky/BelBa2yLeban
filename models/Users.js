@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 //to create an id that autoincrements each time a document is added
 autoIncrement = require("mongoose-auto-increment");
-var connection = mongoose.createConnection( "mongodb+srv://Lina:cherry_liko1234@belba2yleban-tcjmm.mongodb.net/BelBa2yLeban?retryWrites=true&w=majority");
+const mongo = require ('./../config/keys_dev').mongoURI;
+var connection = mongoose.createConnection(mongo);
 autoIncrement.initialize(connection);
 
 const bcrypt = require('bcryptjs');
