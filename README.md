@@ -1,6 +1,9 @@
 # BelBa2yLeban
 ACML project 2019
 
+Deploymnent Link:
+http://ec2-18-185-102-119.eu-central-1.compute.amazonaws.com:9000/
+
 Dependencies:
 
 -	Axios: it is a Promise-based HTTP client for JavaScript. By using Axios it's easy to send asynchronous HTTP request to REST endpoints and perform CRUD operations. ... Make http requests from node.
@@ -48,7 +51,14 @@ Config folder :
 -	all other files in the config folder doesnot include any cofigurations specific to our website/ database, just pieces of code that is used by the rest of the project.
 
 -	keys_dev : is a file that is included in the .gitignore file, since it includes mongoURI of our database --> module.exports = {  mongoURI: ‘ your mongodb database URI ‘  }
+-  MongoDB URI:'mongodb+srv://Lina:cherry_liko1234@belba2yleban-tcjmm.mongodb.net/BelBa2yLeban?retryWrites=true'  (The URI obtained from MongoDB)
+
+-  We obatined the  apiKey: "AIzaSyDgadNbzBTwpCBbGtjnK988SbqhzrOov54" from FireBase
 
 
 
+Important Note:
+
+- The system has an email and password The userName is : belba2yleban@gmail.com  passWord:leban_1234
+- This email was used to create an account in order to create a project on FireBase called belba2yleban
 
