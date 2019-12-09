@@ -12,7 +12,7 @@ const Users = require('../../models/Users');
 const auth = require('../../config/auth')
 
 //-----------------------view my info------------------------------//  done
-router.get('/viewMyInfo/:BID', auth, async(req, res)=> {
+router.post('/viewMyInfo/:BID', auth, async(req, res)=> {
 
   const BuyerID=parseInt(req.params.BID);
   const by = await Users.findOne({_id:BuyerID})
