@@ -22,7 +22,7 @@ class buyerHomepage extends Component {
    const BID = this.props.match.params.BID;
 
     await fetch(`http://localhost:5000/api/buyer/viewMyInfo/${BID}`,{    
-    method:'GET',
+    method:'POST',
     headers: new Headers({
       'auth-token':  localStorage.getItem('token')
     })})
