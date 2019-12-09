@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-image: url(back2.jpg);
+}
+
+.App-link {
+  color: #09d3ac;
+}
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: white;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #24502c;
+}
+
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+.dropdown {
+  display: inline-block;
+  vertical-align: middle;
+}
+.dropdown .dropbtn {
+  display: inline;
+  font-size: 115%;
+  background: transparent; /* no background! */
+  border: 1px solid white;
+  border-radius: 100px;
+  border: none;
+  padding: 10px 20px;
+  min-width: 80%;
+  outline: none;
+  color: inherit;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+}
+
+/* color of Resume when hovered */
+.container a:hover,
+.dropdown:hover .dropbtn {
+  background-color: inherit;
+}
+
+button .hover {
+  display: none;
+}
+.dropdown:hover .no_hover {
+  display: none;
+}
+.dropdown:hover .hover {
+  display: inline;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 52.3%;
+  background-color: white;
+  min-width: 50%;
+  box-shadow: 0px 8px 16px 0px rgba(88, 88, 88, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(218, 213, 213);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-align: left;
+}
