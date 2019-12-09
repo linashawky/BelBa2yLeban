@@ -1,0 +1,20 @@
+FROM node:10
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Install app dependencies
+# A wildcard is .d to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+COPY package*.json ./
+
+RUN npm install
+
+
+# Bundle app source
+# copy everything into the container 
+COPY . .
+
+EXPOSE 5000
+
+CMD [ "npm run", "backend" ]
