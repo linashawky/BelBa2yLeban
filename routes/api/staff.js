@@ -11,7 +11,7 @@ const Users = require('../../models/Users');
 
 const auth = require('../../config/auth')
 
-//-----------------------view my info------------------------------//  done
+//-----------------------view the staff info------------------------------//  done
 router.post('/viewMyInfo/:BID', auth, async(req, res)=> {
 
   const BuyerID=parseInt(req.params.BID);
