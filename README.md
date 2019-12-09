@@ -35,7 +35,7 @@ Dependencies:
 
 -	Nodemailer: is a module for Node.js applications to allow easy sending of mails as notification when user signs up as an example.
 
--	Passport: is authentication middleware for node.js ,The same goes for passport-local,passport-jwt,passport-google-plus-token,passport-google-oauth20).
+-	Passport: is authentication middleware for node.js ,The same goes for passport-local,passport-jwt,passport-google-plus-token.
 
 
 -	Node: allows us to write JavaScript code that runs directly in a computer process itself instead of in a browser.
