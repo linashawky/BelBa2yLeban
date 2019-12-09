@@ -286,7 +286,7 @@ router.delete('/deleteOrder/:OID', auth, async(req, res)=> {
 });
 
 //------------------view my info------------------// done front  
-router.get('/viewMyInfo/:BID', auth, async(req, res)=> {
+router.post('/viewMyInfo/:BID', auth, async(req, res)=> {
 
   const BuyerID=parseInt(req.params.BID);
   const by = await Users.findOne({_id:BuyerID})
