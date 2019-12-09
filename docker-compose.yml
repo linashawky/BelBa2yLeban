@@ -1,0 +1,28 @@
+version: '2.1'
+services:
+    #  express:
+    #  build: "./"
+    #  ports: 
+    #     - "5000:5000"
+  app:
+    container_name: belba2yleban-container
+    restart: always
+    build: .
+    environment:
+      NODE_ENV: ${NODE_ENV}
+    #   DB_HOST: ${DB_HOST}
+    #   DB_NAME: ${DB_NAME}
+    #   DB_USER: ${DB_USER}
+    #   DB_PASSWORD: ${DB_PASSWORD}
+    #   SECRET: ${SECRET}
+    links: 
+        - mongo
+
+#   ports:
+#     - '8000:5000'
+
+  mongo :
+    container_name: mongo
+    image: mongo
+    ports: 
+        - '27017:27017'
